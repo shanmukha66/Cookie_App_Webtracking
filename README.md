@@ -34,6 +34,14 @@ The website implements two types of cookie tracking:
 - Product card hover effects
 - Modern gradient backgrounds
 
+## Demo
+
+### Watch how it works:
+
+https://raw.githubusercontent.com/shanmukha66/Cookie_App_Webtracking/main/Working.mov
+
+[View the demo video](Working.mov)
+
 ## Technical Implementation
 
 ### Cookie Structure
