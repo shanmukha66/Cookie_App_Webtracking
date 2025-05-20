@@ -38,9 +38,9 @@ The website implements two types of cookie tracking:
 
 ### Watch how it works:
 
-https://user-images.githubusercontent.com/shanmukha66/Cookie_App_Webtracking/assets/main/Working.mov
+[![Shan Tech Gadgets Demo](https://img.youtube.com/vi/M8WH-SSb02Q/0.jpg)](https://youtu.be/M8WH-SSb02Q)
 
-<video src="Working.mov" controls title="Demo Video"></video>
+Click the image above to watch the demo video on YouTube.
 
 ## Technical Implementation
 
