@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shan Tech Gadgets - Your One-Stop Tech Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Shan Tech Gadgets</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#recently-viewed">Recently Viewed</a></li>
+                <li><a href="#most-visited">Most Visited</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to Shan Tech Gadgets</h1>
+            <p>Your one-stop shop for all tech needs</p>
+        </section>
+
+        <section id="products" class="products">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="images/smartphone.png" alt="Smartphone">
+                    <h3>Premium Smartphone</h3>
+                    <p>Latest model with advanced features</p>
+                    <a href="products/smartphone.html" class="btn">Learn More</a>
+                </div>
+                <div class="product-card">
+                    <img src="images/Laptop.png" alt="Laptop">
+                    <h3>Ultrabook Laptop</h3>
+                    <p>Powerful and portable computing</p>
+                    <a href="products/laptop.html" class="btn">Learn More</a>
+                </div>
+                <div class="product-card">
+                    <img src="images/Headphones.png" alt="Headphones">
+                    <h3>Wireless Headphones</h3>
+                    <p>Premium sound quality</p>
+                    <a href="products/headphones.html" class="btn">Learn More</a>
+                </div>
+                <div class="product-card">
+                    <img src="images/smartwatch.png" alt="Smartwatch">
+                    <h3>Smart Watch</h3>
+                    <p>Track your fitness and stay connected</p>
+                    <a href="products/smartwatch.html" class="btn">Learn More</a>
+                </div>
+                <div class="product-card">
+                    <img src="images/Tablet.png" alt="Tablet">
+                    <h3>Tablet Pro</h3>
+                    <p>Perfect for work and entertainment</p>
+                    <a href="products/tablet.html" class="btn">Learn More</a>
+                </div>
+                <div class="product-card">
+                    <img src="images/Camera.png" alt="Camera">
+                    <h3>Digital Camera</h3>
+                    <p>Capture memories in high resolution</p>
+                    <a href="products/camera.html" class="btn">Learn More</a>
+                </div>
+                <div class="product-card">
+                    <img src="images/Speaker.png" alt="Speaker">
+                    <h3>Smart Speaker</h3>
+                    <p>Voice-controlled audio system</p>
+                    <a href="products/speaker.html" class="btn">Learn More</a>
+                </div>
+                <div class="product-card">
+                    <img src="images/Gaming console.png" alt="Gaming Console">
+                    <h3>Gaming Console</h3>
+                    <p>Next-gen gaming experience</p>
+                    <a href="products/gaming.html" class="btn">Learn More</a>
+                </div>
+                <div class="product-card">
+                    <img src="images/Drone.png" alt="Drone">
+                    <h3>Camera Drone</h3>
+                    <p>Aerial photography made easy</p>
+                    <a href="products/drone.html" class="btn">Learn More</a>
+                </div>
+                <div class="product-card">
+                    <img src="images/VR.png" alt="VR Headset">
+                    <h3>VR Headset</h3>
+                    <p>Immersive virtual reality experience</p>
+                    <a href="products/vr.html" class="btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="recently-viewed" class="recently-viewed">
+            <h2>Recently Viewed Products</h2>
+            <div id="recently-viewed-list" class="product-grid">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <section id="most-visited" class="most-visited">
+            <h2>Most Visited Products</h2>
+            <div id="most-visited-list" class="product-grid">
+                <!-- Will be populated by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Shan Tech Gadgets. All rights reserved.</p>
+    </footer>
+
+    <div class="back-to-top"></div>
+
+    <script src="js/cookies.js"></script>
+    <script>
+      // Fade-in animation for product cards
+      document.addEventListener('DOMContentLoaded', () => {
+        const cards = document.querySelectorAll('.product-card');
+        cards.forEach((card, i) => {
+          card.style.animationDelay = (i * 0.08) + 's';
+        });
+
+        // Back to top button functionality
+        const backToTop = document.querySelector('.back-to-top');
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', () => {
+          // Show/hide back to top button
+          if (window.scrollY > 300) {
+            backToTop.classList.add('visible');
+          } else {
+            backToTop.classList.remove('visible');
+          }
+
+          // Add/remove scrolled class to header
+          if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+          } else {
+            header.classList.remove('scrolled');
+          }
+        });
+
+        // Smooth scroll to top
+        backToTop.addEventListener('click', () => {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+      });
+    </script>
+</body>
+</html> 

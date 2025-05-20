@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Placeholder</title>
+</head>
+<body>
+    <canvas id="canvas" width="800" height="600" style="display:none;"></canvas>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Fill background
+        ctx.fillStyle = '#f0f0f0';
+        ctx.fillRect(0, 0, 800, 600);
+        
+        // Add text
+        ctx.fillStyle = '#666666';
+        ctx.font = '48px Arial';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('Product Image', 400, 300);
+        
+        // Convert to image and download
+        const link = document.createElement('a');
+        link.download = 'placeholder.jpg';
+        link.href = canvas.toDataURL('image/jpeg');
+        link.click();
+    </script>
+</body>
+</html> 
