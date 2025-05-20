@@ -38,9 +38,9 @@ The website implements two types of cookie tracking:
 
 ### Watch how it works:
 
-https://raw.githubusercontent.com/shanmukha66/Cookie_App_Webtracking/main/Working.mov
+https://user-images.githubusercontent.com/shanmukha66/Cookie_App_Webtracking/assets/main/Working.mov
 
-[View the demo video](Working.mov)
+<video src="Working.mov" controls title="Demo Video"></video>
 
 ## Technical Implementation
 
